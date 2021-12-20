@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Produto_1 = require("./modules/Produto");
+var p1 = new Produto_1.Produto(100, 2, 400);
+var p2 = new Produto_1.Produto(150, 5, 600);
+var p3 = new Produto_1.Produto(130, 5, 600);
+var e1 = new Produto_1.Estoque([p1, p2]);
+console.log(e1.produtos);
+e1.inserir(p3);
+console.log(e1.produtos);
+e1.excluir(p1);
+console.log(e1.produtos);
